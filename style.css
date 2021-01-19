@@ -221,7 +221,7 @@
  }
  /*-------------mobile---------------------------------------------*/
  
- @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+ @media only screen and (min-device-width: 280px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
      .tabs .tab,
      .tabs label {
          order: initial;
