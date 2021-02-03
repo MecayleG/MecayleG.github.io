@@ -1,166 +1,191 @@
 <!DOCTYPE html>
 <html>
+<title>Mecayle Gamba</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    
+    #main {
+        margin-left: 120px
+    }
+    /* Remove margins from "page content" on small screens */
+    
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+</style>
 
-<head>
-    <title>Mecayle G's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-</head>
+<body class="w3-black">
 
-<body>
-    <div class="clearfix">
-        <img src="mee.jpg" alt="my face" class="center">
-        <h1>Mecayle Robyn Gamba</h1>
-        <h4 class="title">Full-Stack developer</h4>
-        <div class="contact">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="me.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PROJECTS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
 
-            <a href="mailto:mecayleg@gmail.com" target="_blank"><i class='fas fa-mail-bulk tooltip'><span
-            class="tooltiptext">Email</span></i></a>
-            <a href="https://github.com/MecayleG" target="_blank"><i class='fab fa-github tooltip'><span
-            class="tooltiptext">Github</span></i></a>
-            <a href="https://www.linkedin.com/in/mecayle-g/" target="_blank"><i class='fab fa-linkedin tooltip'><span
-                class="tooltiptext">LinkedIn</span></i></a>
-            <a href="cv.pdf"><i class='fas fa-file-alt tooltip' target="_blank"><span class="tooltiptext">CV</span></i></a>
-
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
-    <!-- ABOUT -->
-    <div class="tabs">
-        <input type="radio" name="tabs" id="tabone" class="accordian">
-        <label for="tabone">About Me</label>
-        <div class="tab">
-            I am a software developer based in Cape Town who has experience in administration and customer service but would like to broaden my knowledge in terms of technology and programming. I spend most of my free time bettering myself as an individual and trying
-            things I haven’t done before. I enjoy doing front-end development but I would really like to continue learning the full stack of web development in more context and learn more languages. A quote that I live by and that has helped me alot as
-            an individual who always seems to be getting ahead of herself.
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Mecayle Gamba</h1>
+            <p>Web Developer.</p>
+            <img src="me.jpg" alt="boy" class="w3-image" width="992" height="1108">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Mecayle Gamba</h2>
+            <hr style="width:200px" class="w3-opacity"> I am a software developer based in Cape Town who has experience in administration and customer service but would like to broaden my knowledge in terms of technology and programming. I spend most of my free time bettering myself as an individual
+            and trying things I haven’t done before. I enjoy doing front-end development but I would really like to continue learning the full stack of web development in more context and learn more languages. A quote that I live by and that has helped
+            me alot as an individual who always seems to be getting ahead of herself.
             <br>
             <q>Start by doing what's necessary, then do what's possible; and suddenly you are doing the
                impossible. <br>
                ~ Francis of Assisi</q>
-            <h3>My Skills</h3>
-
-            <p>HTML</p>
-            <div class="skillCon">
-                <div class="skills html">70%</div>
+            <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+            <p class="w3-wide">HTML</p>
+            <div class="w3-white">
+                <div class="w3-teal" style="height:28px;width:80%"></div>
             </div>
-
-            <p>CSS</p>
-            <div class="skillCon">
-                <div class="skills css">70%</div>
+            <p class="w3-wide">CSS</p>
+            <div class="w3-white">
+                <div class="w3-teal" style="height:28px;width:70%"></div>
             </div>
-
-            <p>JavaScript</p>
-            <div class="skillCon">
-                <div class="skills js">50%</div>
+            <p class="w3-wide">SQL</p>
+            <div class="w3-white">
+                <div class="w3-teal" style="height:28px;width:70%"></div>
             </div>
-            <p>SQL</p>
-            <div class="skillCon">
-                <div class="skills sql">50%</div>
+            <p class="w3-wide">Javascript</p>
+            <div class="w3-white">
+                <div class="w3-teal" style="height:28px;width:60%"></div>
             </div>
-
+            <p class="w3-wide">Java</p>
+            <div class="w3-white">
+                <div class="w3-teal" style="height:28px;width:10%"></div>
+            </div><br>
+            <button class="w3-button w3-light-grey w3-padding-large w3-section"><a href="cv.pdf" target="_blank">      <i class="fa fa-download"></i> Download Resume
+            </a>
+    </button>
         </div>
-        <!-- PROJECTS -->
-        <input type="radio" name="tabs" id="tabtwo" class="accordian">
-        <label for="tabtwo">My Projects</label>
-        <div class="tab">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h2 class="upcycleName">Up-Cycle</h2>
-                    <img src="pexels-ready-made-3850512.jpg" alt="recycle logo" class="upcycle"> Up-Cycle is an app that was created for the first codex hackathon in 2020. It allows you to check what can be recycled, how much you can get for your recyclable
-                    goods and where they can be dropped off. Since it was my idea I decided to redo the app.<a href="https://upcyc1e.herokuapp.com/" target="_blank">Check it out here</a>
 
-                </div>
-                <div class="grid-item">
-                    <h2>You can check out my other apps here</h2>
-                    <ul>
-                        <h4 class="links">
-                            <li><a href="https://mecayleg.github.io/Journal/" target="_blank">Journal</a></li>
-                        </h4>
-                        A journal I made to learn new things regularly.
-                        <h4 class="links">
-                            <li><a href="https://mecayleg.github.io/bootcamp-tests/" target="_blank">Test Driven Development</a></li>
-                        </h4>
-                        Writing unit tests using Mocha unit testing framework and the ChaiJS asserts for checking function results. Unit testing were also done in the terminal, using Node.js's built in assert module to do asserts.
-                        <h4 class="links">
-                            <li><a href="https://mecayleg.github.io/dom-intro/" target="_blank">DOM Introduction</a></li>
-                        </h4>
-                        Adding functionality to widgets created by Project Codex to learn how the DOM works using JavaScript. Unit tests were also done for this project <a href="https://mecayleg.github.io/dom-widgets/" target="_blank">check it out here</a>                        <br> Back-end: allows you to set a cost for a call and sms and a warning and critical level. Once the warning level is reached the total cost will change color, once the critical level is reached the total will not increment until
-                        updated.
-                        <h4 class="links">
-                            <li> <a href="https://mecayleg.github.io/greetings/" target="_blank"> Greetings WebApp</a></li>
-                        </h4>
-                        A webpage that allows you to enter a name and select a language. Once the button is pressed it displays a greeting in the selected language with your name. This project was done in back-end as well. It stores the names in a database and you can see how
-                        many times a specific user has been greeted. <a href="https://young-brook-89808.herokuapp.com/" target="_blank">Heroku link</a>
-                        <h4 class="links">
-                            <li> <a href="https://mecayleg.github.io/registration-numbers/" target="_blank">Registration Numbers</a></li>
-                        </h4>
-                        A webpage that dislays registration numbers and allows you to filter through towns and stores the registration numbers using localStorage, there is a version using Handlebars templating <a href="https://mecayleg.github.io/registration-numbers-with-handlebars/"
-                            target="_blank">here</a>. This project was done in back-end as well. The registration numbers are stored in a database. <a href="https://stark-inlet-60469.herokuapp.com/" target="_blank">Heroku link</a>
-                        <h4 class="links">
-                            <li><a href="https://mecayleg.github.io/matching-days/" target="_blank">Matching Days</a></li>
-                        </h4>
-                        A webpage that checks if 2 dates are on the same weekday. If yes it will highlet in green, if not, the days will be highlighted in different colors
-                        <h4 class="links">
-                            <li><a href="https://infinite-citadel-37920.herokuapp.com/" target="_blank">Waiters WebApp</a></li>
-                        </h4>
-                        A webpage that allows you to book weekly shifts and shows you who selected which days. Users can even update days booked by entering their name for a second time and seeing which days were previously selected. This project was only built in back-end
-                        <!-- <h4 class="links">
-                            <li><a href="https://emshoes.herokuapp.com/" target="_blank">Shoe Catalogue</a></li>
-                        </h4>
-                        A webage that allows you to filter shoe stock, update the stock and buy shoes. This project uses a shoe API created by myself
-                        <h4 class="links">
-                            <li><a href="https:///" target="_blank">Show and Tell</a></li>
-                        </h4>
-                        This app teaches kids about fruit and has a quiz to test their memory based on the facts given about the fruit they want to know about. I used Google's Teachable Machine to identify the fruits and Google's text to speech module for voice. -->
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- INSIGHT -->
-        <input type="radio" name="tabs" id="tabthree" class="accordian">
-        <label for="tabthree">Insight</label>
-        <div class="tab">
-            <div class="knowledge">
-                <h2>Insightful Knowledge</h2>
-                <h3>Here are some interesting articles and videos I've compiled that could be useful.</h3>
-                <p1>Ever wondered why the sky is blue?<br>
-                    <a href="https://spaceplace.nasa.gov/blue-sky/en/" target="_blank">Why we see a blue sky</a></p1><br>
-                <p1>Who actually discovered electricity?<br>
-                    <a href="https://www.universetoday.com/82402/who-discovered-electricity/" target="_blank">electricity
-            uncovered</a></p1><br>
-                <p1>The worlds first democratically elected female president<br>
-                    <a href="https://en.wikipedia.org/wiki/Vigd%C3%ADs_Finnbogad%C3%B3ttir" target="_blank">Vigdís
-            Finnbogadóttir</a><br> And the first elected female head of state in Africa.<br>
-                    <a href="https://en.wikipedia.org/wiki/Ellen_Johnson_Sirleaf" target="_blank">Ellen Johnson Sirleaf</a></p1>
-                <br>
-                <p1>This one could be a little odd <br>
-                    <a href="http://theconversation.com/curious-kids-where-does-my-poo-go-when-i-flush-the-toilet-does-it-go-into-the-ocean-78254" target="_blank">Where does poop go</a></p1><br>
-                <p1>If you're religious I'd like to hear your reason <br>
-                    <a href="https://www.sciencenewsforstudents.org/article/where-do-humans-come" target="_blank">Where do humans
-            come from?</a></p1><br>
-                <p1>Computer Cookies <br>
-                    <a href="http://www.whatarecookies.com/" target="_blank">What are they?</a></p1>
-
-            </div>
-        </div>
+        <!-- End About Section -->
     </div>
 
-    <script>
-        var acc = document.querySelector(".accordian");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block"
-                }
-            });
-        }
-    </script>
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Projects</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+                <img src="/w3images/wedding.jpg" style="width:100%">
+                <img src="/w3images/rocks.jpg" style="width:100%">
+                <img src="/w3images/sailboat.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-half">
+                <img src="/w3images/underwater.jpg" style="width:100%">
+                <img src="/w3images/chef.jpg" style="width:100%">
+                <img src="/w3images/wedding.jpg" style="width:100%">
+                <img src="/w3images/p6.jpg" style="width:100%">
+            </div>
+            <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cape Town, SA</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27 676035110</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mecayleg@gmail.com</p>
+        </div><br>
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="https://formspree.io/f/meqpnble" method="POST">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+            </p>
+        </form>
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+    </div>
+
 </body>
 
 </html>
